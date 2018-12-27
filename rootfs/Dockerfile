@@ -1,4 +1,4 @@
-FROM heroku/heroku:18
+FROM heroku/heroku:18-build
 
 RUN mkdir /app
 RUN addgroup --quiet --gid 2000 slug && \
