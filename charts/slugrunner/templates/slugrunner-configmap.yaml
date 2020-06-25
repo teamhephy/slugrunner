@@ -5,4 +5,4 @@ metadata:
   labels:
     heritage: deis
 data:
-  image: "quay.io/{{.Values.org}}/slugrunner:{{.Values.docker_tag}}"
+  image: "{{.Values.org}}/slugrunner:{{.Values.docker_tag}}"
