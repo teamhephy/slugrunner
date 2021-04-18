@@ -1,4 +1,4 @@
-FROM heroku/heroku:18-build
+FROM heroku/heroku:20-build
 
 RUN mkdir /app
 RUN addgroup --quiet --gid 2000 slug && \
@@ -12,13 +12,13 @@ ENV PORT 5000
 EXPOSE 5000
 
 ADD ./runner /runner
-ADD ./bin /bin
-ADD https://storage.googleapis.com/hephy-obj-storage-cli/bb8e054/objstorage /bin/objstorage
-RUN chmod +x /bin/objstorage && \
+ADD ./bin /usr/bin
+ADD https://storage.googleapis.com/hephy-obj-storage-cli/bb8e054/objstorage /usr/bin/objstorage
+RUN chmod +x /usr/bin/objstorage && \
     chown slug:slug /app \
                     /runner/init \
-                    /bin/get_object \
-                    /bin/objstorage
+                    /usr/bin/get_object \
+                    /usr/bin/objstorage
 
 USER slug
 ENV HOME /app
