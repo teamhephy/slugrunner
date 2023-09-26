@@ -1,7 +1,8 @@
+apiVersion: v2
 name: slugrunner
-home: https://github.com/deisthree/slugrunner
-version: <Will be populated by the ci before publishing the chart>
-description: Buildpack application runner for Deis Workflow.
+home: https://github.com/teamhephy/slugrunner
+version: 2.7.2
+description: Buildpack application runner for Hephy Workflow.
 maintainers:
-  - name: Deis Team
-    email: engineering@deis.com
+- name: Team Hephy
+  email: team@teamhephy.com

@@ -1,2 +1,2 @@
 org: "hephy"
-docker_tag: canary
+docker_tag: v2.7.0
